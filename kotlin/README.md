@@ -17,6 +17,7 @@ It is built on top of the Rust core in [`../core`](../core) through
 | [`RendezvousPadding.kt`](src/commonMain/kotlin/app/umbera/core/crypto/RendezvousPadding.kt) | size padding |
 | [`RendezvousPow.kt`](src/commonMain/kotlin/app/umbera/core/crypto/RendezvousPow.kt) | anti-spam proof of work |
 | [`KeyTransparencyVerifier.kt`](src/commonMain/kotlin/app/umbera/core/crypto/KeyTransparencyVerifier.kt) | Merkle inclusion proofs for keys |
+| [`call/CallSignaling.kt`](src/commonMain/kotlin/app/umbera/core/call/CallSignaling.kt) | end-to-end encryption and signing of call setup |
 | [`Labels.kt`](src/commonMain/kotlin/app/umbera/core/crypto/Labels.kt) | protocol domain-separation labels |
 | [`LocalKeyStore.kt`](src/commonMain/kotlin/app/umbera/core/crypto/LocalKeyStore.kt) | interface to the device keystore |
 
