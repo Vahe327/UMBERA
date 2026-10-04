@@ -15,6 +15,7 @@
   <a href="https://apps.apple.com/app/id6805525799"><b>App Store</b></a> ·
   <a href="https://play.google.com/store/apps/details?id=cc.umbera.app"><b>Google Play</b></a> ·
   <a href="https://x.com/umberaapp"><b>X</b></a> ·
+  <a href="docs/PROOF.md"><b>Proof</b></a> ·
   <a href="docs/PROTOCOL.md"><b>Protocol</b></a> ·
   <a href="SECURITY.md"><b>Security</b></a>
 </p>
@@ -89,6 +90,10 @@ Multiplatform code built on top of it.
 The full specification, including every wire format and domain-separation label, is in
 [**docs/PROTOCOL.md**](docs/PROTOCOL.md).
 
+> **Don't trust, verify.** [docs/PROOF.md](docs/PROOF.md) shows, with code references, runnable tests
+> and a packet-capture procedure, that nobody but the recipient can read a message and nobody but the
+> participants can listen to a call.
+
 ## Cryptographic primitives
 
 <p align="center">
@@ -131,6 +136,7 @@ cargo test
 
 ```
 test result: ok. 23 passed; 0 failed
+test result: ok. 7 passed; 0 failed     (tests/proof.rs)
 ```
 
 The tests include known-answer vectors for every primitive and end-to-end checks of ML-KEM-1024 and
